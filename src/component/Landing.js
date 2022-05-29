@@ -4,6 +4,8 @@ import { getCoin } from "../services/api";
 //components
 import Loader from "./Loader";
 import Coin from "./Coin";
+//style
+import styles from "./Landing.module.css"
 
 const Landing = () => {
   const [coins, setCoins] = useState([]);
@@ -25,19 +27,18 @@ const Landing = () => {
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
-
   return (
-    <> 
-      <input
+    <>
+      <input className={styles.input}
         type="text"
         placeholder="Search"
         value={search}
         onChange={serchHandler}
       />
       {coins.length ? (
-        <div>
+        <div className={styles.coinContainer}>
           {searchedCoins.map((coin) => (
-            <Coin
+            <Coin 
               key={coin.id}
               name={coin.name}
               image={coin.image}
