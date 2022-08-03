@@ -2,25 +2,34 @@
 .input {
     width: 300px;
     margin-top: 50px;
-    border: 1px solid silver;
+    border: none;
     border-radius: 5px;
     height: 20px;
     padding: 5px;
-    background-color: #f6f6f6;
+    text-align: center;
+    background: rgba(187, 187, 187, 0.736);
     transition: all 0.2s ease;
+  
   }
+  
+  .input::placeholder {
+    color: rgba(255, 255, 255, 0.844);
+  }
+
   .input:focus {
     outline: none;
-    border-color: white;
-    background: white;
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     box-shadow: rgba(74, 74, 74, 0.24) 0px 3px 8px;
+    
   }
   
 
 .coinContainer {
     margin: 50px auto;
-    border: 1px solid silver;
     border-radius: 10px;
     width: fit-content;
-    background-color: #f6f6f6;
+    background: #567286;
+    background: linear-gradient(270deg, rgba(86, 114, 134, 0.6) 25%, rgba(113, 134, 150, 0.6) 50%, rgba(142, 152, 159, 0.6) 75%, rgba(181, 181, 182, 0.6) 100%);
   }
+

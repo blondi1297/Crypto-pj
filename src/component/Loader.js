@@ -1,11 +1,10 @@
 import React from 'react';
-import spinner from "../gif/spinner.gif"
+import spinner from "../gif/spinner.svg";
 
 const Loader = () => {
     return (
         <div>
-            <img src={spinner} alt="loading"/>
-            <p>Loading...</p>
+            <img src={spinner} alt="loading" style={{marginTop: "150px"}}/>
         </div>
     );
 };
